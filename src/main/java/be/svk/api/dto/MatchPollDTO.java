@@ -1,4 +1,4 @@
-package main.java.dto;
+package be.svk.api.dto;
 
 import java.util.Collections;
 import java.util.List;

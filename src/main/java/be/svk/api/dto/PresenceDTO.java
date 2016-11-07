@@ -1,6 +1,4 @@
-package main.java.dto;
-
-import be.spring.app.model.Presence;
+package be.svk.api.dto;
 
 /**
  * Created by u0090265 on 09/09/16.
@@ -8,21 +6,21 @@ import be.spring.app.model.Presence;
 public class PresenceDTO implements Comparable<PresenceDTO> {
     private AccountDTO account;
     private boolean isEditable;
-    private Presence.PresenceType type;
+    private PresenceType type;
     private String modified;
 
-    public PresenceDTO(AccountDTO account, Presence.PresenceType type, String modified, boolean isEditable) {
+    public PresenceDTO(AccountDTO account, PresenceType type, String modified, boolean isEditable) {
         this.account = account;
         this.type = type;
         this.isEditable = isEditable;
         this.modified = modified;
     }
 
-    public Presence.PresenceType getType() {
+    public PresenceType getType() {
         return type;
     }
 
-    public void setType(Presence.PresenceType type) {
+    public void setType(PresenceType type) {
         this.type = type;
     }
 
@@ -53,5 +51,9 @@ public class PresenceDTO implements Comparable<PresenceDTO> {
 
     public void setModified(String modified) {
         this.modified = modified;
+    }
+
+    enum PresenceType {
+
     }
 }

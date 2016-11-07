@@ -1,6 +1,6 @@
-package main.java.dto;
+package be.svk.api.dto;
 
-import static be.spring.app.utils.GeneralUtils.convertToDate;
+import static be.svk.api.utils.DateUtils.convertToDate;
 
 /**
  * Created by u0090265 on 16/09/16.

@@ -1,17 +1,15 @@
-package main.java.dto;
-
-import be.spring.app.model.BaseClass;
+package be.svk.api.dto;
 
 /**
  * Created by u0090265 on 09/09/16.
  */
-public class MatchDoodleDTO extends BaseClass {
+public class MatchDoodleDTO extends DTOBaseClass {
     private DoodleDTO doodle;
     private String date;
     private String description;
 
     public MatchDoodleDTO(long id, DoodleDTO doodle, String date, String description) {
-        this.id = id;
+        super(id);
         this.doodle = doodle;
         this.date = date;
         this.description = description;

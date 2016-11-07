@@ -1,13 +1,11 @@
-package main.java.dto;
-
-import be.spring.app.model.Account;
+package be.svk.api.dto;
 
 /**
  * Created by u0090265 on 11/06/16.
  */
 public class MultipleChoiceVoteDTO<T> {
     private T answer;
-    private Account account;
+    private AccountDTO account;
 
     public MultipleChoiceVoteDTO(T answer) {
         this.answer = answer;
@@ -24,11 +22,11 @@ public class MultipleChoiceVoteDTO<T> {
         this.answer = answer;
     }
 
-    public Account getAccount() {
+    public AccountDTO getAccount() {
         return account;
     }
 
-    public void setAccount(Account account) {
+    public void setAccount(AccountDTO account) {
         this.account = account;
     }
 

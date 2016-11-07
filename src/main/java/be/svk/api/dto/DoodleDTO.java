@@ -1,6 +1,4 @@
-package main.java.dto;
-
-import be.spring.app.model.BaseClass;
+package be.svk.api.dto;
 
 import java.util.Collections;
 import java.util.List;
@@ -8,13 +6,13 @@ import java.util.List;
 /**
  * Created by u0090265 on 09/09/16.
  */
-public class DoodleDTO extends BaseClass {
+public class DoodleDTO extends DTOBaseClass {
     private List<PresenceDTO> presences;
     private PresenceDTO currentPresence;
     private int total;
 
     public DoodleDTO(long id, List<PresenceDTO> presences, PresenceDTO currentPresence, int total) {
-        this.id = id;
+        super(id);
         this.total = total;
         this.currentPresence = currentPresence;
         setPresences(presences);

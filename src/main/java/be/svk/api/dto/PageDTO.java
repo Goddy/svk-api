@@ -1,6 +1,4 @@
-package main.java.dto;
-
-import org.springframework.util.Assert;
+package be.svk.api.dto;
 
 import java.util.List;
 
@@ -15,7 +13,7 @@ public class PageDTO<T> {
     private boolean hasPrevious;
 
     public PageDTO(List<T> list, int totalPages, boolean hasNext, boolean hasPrevious) {
-        Assert.notNull(list);
+        assert list != null;
         this.list = list;
         this.totalPages = totalPages;
         this.hasNext = hasNext;

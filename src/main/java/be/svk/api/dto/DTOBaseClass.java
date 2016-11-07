@@ -1,4 +1,4 @@
-package main.java.dto;
+package be.svk.api.dto;
 
 /**
  * Created by u0090265 on 10/06/16.

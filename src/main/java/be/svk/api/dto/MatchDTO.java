@@ -1,4 +1,4 @@
-package main.java.dto;
+package be.svk.api.dto;
 
 import io.swagger.annotations.ApiModelProperty;
 
